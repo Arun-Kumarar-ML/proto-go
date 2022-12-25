@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package example.simple;
+
+option go_package= "proto-go/proto";
+
+enum Eyecolor{
+  EYE_COLOR_UNSPECIFIED = 0;
+  EYE_COLOR_BLUE =1;
+  EYE_COLOR_GREEN =2;
+}
+
+message enumration{
+  Eyecolor eyecolor =1;
+}

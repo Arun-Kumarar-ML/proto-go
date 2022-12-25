@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package expamle.map;
+option go_package = "proto-go/proto";
+
+
+message mapmessag{
+  map<string, int32> keypair = 1;
+}

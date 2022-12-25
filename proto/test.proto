@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package example.simple;
+option go_package = "proto-go/proto";
+
+message Simple{
+  uint32 id = 1;
+  bool is_simple = 2;
+  string name = 3;
+  repeated int32 lists = 4;
+}
+
+message Simple1{
+  Simple  simple1 =1;
+  repeated Simple dummy1 = 2;
+}
